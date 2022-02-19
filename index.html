@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form>
+            <div id="title">Application for permission to date my daughter</div>
+            <p id="note"><strong>Note:</strong> Form is to be completed at least 21 days prior to date</p>
+
+            <fieldset>
+                <legend><strong>Personal Details</strong></legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name here" required>
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter address here" required>
+                <br>
+                <label for="email-address">Email:</label>
+                <input type="email" id="email-address" name="email-address" placeholder="Enter email here" required>
+                <br>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="Enter 10 digit number" required>
+                <br>
+                <label for="iq">IQ:</label>
+                <input type="number" id="iq" name="iq" placeholder="Enter IQ here" min=0 required>
+                <br>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+                <br>
+                <label for="date-date">Date For Proposed Outing:</label>
+                <input type="date" id="date-date" name="date-date" required>
+            </fieldset> <!-- end of personal details -->
+
+            <fieldset id="miscellaneous-details">
+                <label for="miscellaneous">Check all that apply</label><br>
+                <input type="checkbox" name="miscellaneous" value="tattoos/piercings"> I have tattoos and/or piercings<br>
+                <input type="checkbox" name="miscellaneous" value="2+-years-older"> I am more than 2 years older than my daughter<br>
+                <input type="checkbox" name="miscellaneous" value="car"> I own a panel van or V8 ute<br>
+                <input type="checkbox" name="miscellaneous" value="full-time" checked> I work full-time<br>
+                <input type="checkbox" name="miscellaneous" value="rich-parents" checked> My parents are rich<br>
+                <input type="checkbox" name="miscellaneous" value="well-lit" checked> Is the date at a well lit public location<br>
+            </fieldset>
+
+            <fieldset id="politics-and-education">
+                Political Persuasion: 
+                <select id="politics">
+                    <option value="left">Left Wing</option>
+                    <option value="right">Right Wing</option>
+                    <option value="conservative">Conservative</option>
+                </select>
+                Education Level Completed: 
+                <select id="education">
+                    <option value="university">University</option>
+                    <option value="college">College</option>
+                    <option value="high-school">High School</option>
+                    <option value="none">None</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="essay-section">
+                <legend><strong>Essay Section</strong></legend>
+                <p>In 50 words or more explain why you want to date my daughter</p>
+                <textarea>Enter text here</textarea>
+                <p>Please upload contact details for 2 references</p>
+                <textarea>Enter text here</textarea>
+                <p>Upload Police Clearance Certificate, Bank Statement, and Medical Certificates here: <button>Attach Files</button></p> 
+            </fieldset>
+
+            <button type="submit">Send Your Application</button>
+        </form>
+    </main>
+</body>
+</html>
